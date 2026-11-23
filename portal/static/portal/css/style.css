@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #111827;          /* Dark navy-charcoal text para mataas ang contrast */
+  background: #F4F6FB;     /* Soft cool off-white background */
+}
+
+header, footer {
+  background: #0D1B82;     /* NTC Royal Blue */
+  color: #FFFFFF;
+  padding: 16px 24px;
+}
+
+header {
+  border-bottom: 4px solid #FDE61A; /* NTC Gold accent line */
+}
+
+footer {
+  border-top: 4px solid #FDE61A;
+  text-align: center;
+}
+
+header img {
+  vertical-align: middle;
+  background: #FFFFFF;     /* White circle backdrop para malinis ang outer edges ng seal */
+  border-radius: 50%;
+  padding: 3px;
+}
+
+nav {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background: #FDE61A;     /* NTC Gold highlight kapag naka-hover */
+  color: #0D1B82;          /* Royal Blue text sa ibabaw ng gold para high-contrast */
+}
+
+nav a:focus-visible {
+  outline: 3px solid #FDE61A; /* NTC Gold focus ring para sa keyboard users */
+  outline-offset: 2px;
+}
+
+main {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #FFFFFF;
+  border-left: 5px solid #0D1B82;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(13, 27, 130, 0.08);
+}
+
+h1 {
+  color: #0D1B82;          /* NTC Royal Blue heading */
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: block;
+    margin: 12px 0 0;
+  }
+  nav a {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+}
